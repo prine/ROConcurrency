@@ -12,7 +12,7 @@ s.name             = "ROConcurrency"
 s.version          = "1.0.0"
 s.summary          = "Simple helper classes which will reduce the complexity for using concurrent methods in Swift."
 s.description      = <<-DESC
-Simple helper classes which will reduce the complexity for using concurrent methods in Swift.
+Simple helper classes which will reduce the complexity for using concurrent methods in Swift. There is a Barrier class, BarrierComplex class and a Synchronized logger which will simplify the concurrent developing process.
 DESC
 s.homepage         = "https://github.com/prine/ROConcurrency"
 s.screenshots     = "https://camo.githubusercontent.com/54ac217836c172791733d1464e805a7401db3dea/687474703a2f2f7072696e652e63682f2f524f53746f726167654261722e706e67", "https://camo.githubusercontent.com/62c5d8ec8583b876d890236c4c6784e1ef54422b/687474703a2f2f7072696e652e63682f2f524f53746f726167654261725f63617074696f6e2e706e67"
