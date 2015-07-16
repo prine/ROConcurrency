@@ -21,7 +21,7 @@
 		CB929B5A1B57D1D000962DEA /* TaskComplex.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB929B541B57D1D000962DEA /* TaskComplex.swift */; };
 		CB929B5E1B57D1F200962DEA /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = CB929B5B1B57D1F200962DEA /* LICENSE */; };
 		CB929B5F1B57D1F200962DEA /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = CB929B5C1B57D1F200962DEA /* README.md */; };
-		CB929B601B57D1F200962DEA /* ROStorageBar.podspec in Resources */ = {isa = PBXBuildFile; fileRef = CB929B5D1B57D1F200962DEA /* ROStorageBar.podspec */; };
+		CB929B601B57D1F200962DEA /* ROConcurrency.podspec in Resources */ = {isa = PBXBuildFile; fileRef = CB929B5D1B57D1F200962DEA /* ROConcurrency.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +53,7 @@
 		CB929B541B57D1D000962DEA /* TaskComplex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TaskComplex.swift; path = Source/TaskComplex.swift; sourceTree = "<group>"; };
 		CB929B5B1B57D1F200962DEA /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		CB929B5C1B57D1F200962DEA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		CB929B5D1B57D1F200962DEA /* ROStorageBar.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ROStorageBar.podspec; sourceTree = "<group>"; };
+		CB929B5D1B57D1F200962DEA /* ROConcurrency.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ROConcurrency.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +79,7 @@
 			children = (
 				CB929B5B1B57D1F200962DEA /* LICENSE */,
 				CB929B5C1B57D1F200962DEA /* README.md */,
-				CB929B5D1B57D1F200962DEA /* ROStorageBar.podspec */,
+				CB929B5D1B57D1F200962DEA /* ROConcurrency.podspec */,
 				CB929B2B1B57D18900962DEA /* ROConcurrency */,
 				CB929B411B57D18900962DEA /* ROConcurrencyTests */,
 				CB929B2A1B57D18900962DEA /* Products */,
@@ -229,7 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB929B341B57D18900962DEA /* Main.storyboard in Resources */,
-				CB929B601B57D1F200962DEA /* ROStorageBar.podspec in Resources */,
+				CB929B601B57D1F200962DEA /* ROConcurrency.podspec in Resources */,
 				CB929B391B57D18900962DEA /* LaunchScreen.xib in Resources */,
 				CB929B5E1B57D1F200962DEA /* LICENSE in Resources */,
 				CB929B361B57D18900962DEA /* Images.xcassets in Resources */,

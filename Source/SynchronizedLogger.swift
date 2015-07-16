@@ -8,23 +8,24 @@
 
 import Foundation
 
-public class SynchronizedLogger {
+class SynchronizedLogger {
     
-    public var dateFormatter = NSDateFormatter()
-
-    public init() {
+    var dateFormatter = NSDateFormatter()
+    
+    init() {
         dateFormatter.timeStyle = NSDateFormatterStyle.MediumStyle
         dateFormatter.dateStyle = NSDateFormatterStyle.ShortStyle
     }
     
-    public func log(message:String) -> () {
+    func log(message:String) -> () {
         Lock.synchronize(self) {
             var date = NSDate()
+            println("\(self.dateFormatter.stringFromDate(date)) - \(message)")
         }
     }
     
     // PRAGMA MARK: - Singleton -
-    public class var sharedInstance: SynchronizedLogger {
+    class var sharedInstance: SynchronizedLogger {
         struct Singleton {
             static let instance = SynchronizedLogger()
         }
