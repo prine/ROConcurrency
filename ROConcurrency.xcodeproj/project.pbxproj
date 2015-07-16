@@ -13,6 +13,15 @@
 		CB929B361B57D18900962DEA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB929B351B57D18900962DEA /* Images.xcassets */; };
 		CB929B391B57D18900962DEA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB929B371B57D18900962DEA /* LaunchScreen.xib */; };
 		CB929B451B57D18900962DEA /* ROConcurrencyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB929B441B57D18900962DEA /* ROConcurrencyTests.swift */; };
+		CB929B551B57D1D000962DEA /* Barrier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB929B4F1B57D1D000962DEA /* Barrier.swift */; };
+		CB929B561B57D1D000962DEA /* BarrierComplex.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB929B501B57D1D000962DEA /* BarrierComplex.swift */; };
+		CB929B571B57D1D000962DEA /* Lock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB929B511B57D1D000962DEA /* Lock.swift */; };
+		CB929B581B57D1D000962DEA /* SynchronizedLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB929B521B57D1D000962DEA /* SynchronizedLogger.swift */; };
+		CB929B591B57D1D000962DEA /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB929B531B57D1D000962DEA /* Task.swift */; };
+		CB929B5A1B57D1D000962DEA /* TaskComplex.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB929B541B57D1D000962DEA /* TaskComplex.swift */; };
+		CB929B5E1B57D1F200962DEA /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = CB929B5B1B57D1F200962DEA /* LICENSE */; };
+		CB929B5F1B57D1F200962DEA /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = CB929B5C1B57D1F200962DEA /* README.md */; };
+		CB929B601B57D1F200962DEA /* ROStorageBar.podspec in Resources */ = {isa = PBXBuildFile; fileRef = CB929B5D1B57D1F200962DEA /* ROStorageBar.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +45,15 @@
 		CB929B3E1B57D18900962DEA /* ROConcurrencyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ROConcurrencyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB929B431B57D18900962DEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB929B441B57D18900962DEA /* ROConcurrencyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ROConcurrencyTests.swift; sourceTree = "<group>"; };
+		CB929B4F1B57D1D000962DEA /* Barrier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Barrier.swift; path = Source/Barrier.swift; sourceTree = "<group>"; };
+		CB929B501B57D1D000962DEA /* BarrierComplex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BarrierComplex.swift; path = Source/BarrierComplex.swift; sourceTree = "<group>"; };
+		CB929B511B57D1D000962DEA /* Lock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Lock.swift; path = Source/Lock.swift; sourceTree = "<group>"; };
+		CB929B521B57D1D000962DEA /* SynchronizedLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SynchronizedLogger.swift; path = Source/SynchronizedLogger.swift; sourceTree = "<group>"; };
+		CB929B531B57D1D000962DEA /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Task.swift; path = Source/Task.swift; sourceTree = "<group>"; };
+		CB929B541B57D1D000962DEA /* TaskComplex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TaskComplex.swift; path = Source/TaskComplex.swift; sourceTree = "<group>"; };
+		CB929B5B1B57D1F200962DEA /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		CB929B5C1B57D1F200962DEA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CB929B5D1B57D1F200962DEA /* ROStorageBar.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ROStorageBar.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +77,9 @@
 		CB929B201B57D18900962DEA = {
 			isa = PBXGroup;
 			children = (
+				CB929B5B1B57D1F200962DEA /* LICENSE */,
+				CB929B5C1B57D1F200962DEA /* README.md */,
+				CB929B5D1B57D1F200962DEA /* ROStorageBar.podspec */,
 				CB929B2B1B57D18900962DEA /* ROConcurrency */,
 				CB929B411B57D18900962DEA /* ROConcurrencyTests */,
 				CB929B2A1B57D18900962DEA /* Products */,
@@ -82,6 +103,7 @@
 				CB929B321B57D18900962DEA /* Main.storyboard */,
 				CB929B351B57D18900962DEA /* Images.xcassets */,
 				CB929B371B57D18900962DEA /* LaunchScreen.xib */,
+				CB929B4E1B57D19E00962DEA /* Source */,
 				CB929B2C1B57D18900962DEA /* Supporting Files */,
 			);
 			path = ROConcurrency;
@@ -110,6 +132,20 @@
 				CB929B431B57D18900962DEA /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CB929B4E1B57D19E00962DEA /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				CB929B4F1B57D1D000962DEA /* Barrier.swift */,
+				CB929B501B57D1D000962DEA /* BarrierComplex.swift */,
+				CB929B511B57D1D000962DEA /* Lock.swift */,
+				CB929B521B57D1D000962DEA /* SynchronizedLogger.swift */,
+				CB929B531B57D1D000962DEA /* Task.swift */,
+				CB929B541B57D1D000962DEA /* TaskComplex.swift */,
+			);
+			name = Source;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,7 +229,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB929B341B57D18900962DEA /* Main.storyboard in Resources */,
+				CB929B601B57D1F200962DEA /* ROStorageBar.podspec in Resources */,
 				CB929B391B57D18900962DEA /* LaunchScreen.xib in Resources */,
+				CB929B5E1B57D1F200962DEA /* LICENSE in Resources */,
 				CB929B361B57D18900962DEA /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,7 +251,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB929B311B57D18900962DEA /* ViewController.swift in Sources */,
+				CB929B571B57D1D000962DEA /* Lock.swift in Sources */,
 				CB929B2F1B57D18900962DEA /* AppDelegate.swift in Sources */,
+				CB929B561B57D1D000962DEA /* BarrierComplex.swift in Sources */,
+				CB929B551B57D1D000962DEA /* Barrier.swift in Sources */,
+				CB929B591B57D1D000962DEA /* Task.swift in Sources */,
+				CB929B5F1B57D1F200962DEA /* README.md in Sources */,
+				CB929B581B57D1D000962DEA /* SynchronizedLogger.swift in Sources */,
+				CB929B5A1B57D1D000962DEA /* TaskComplex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
