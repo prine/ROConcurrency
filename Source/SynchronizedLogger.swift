@@ -19,8 +19,8 @@ class SynchronizedLogger {
     
     func log(message:String) -> () {
         Lock.synchronize(self) {
-            var date = NSDate()
-            println("\(self.dateFormatter.stringFromDate(date)) - \(message)")
+            let date = NSDate()
+            print("\(self.dateFormatter.stringFromDate(date)) - \(message)")
         }
     }
     

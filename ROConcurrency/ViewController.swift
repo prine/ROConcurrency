@@ -21,44 +21,44 @@ class ViewController: UIViewController {
     }
     
     func barrierExample() {
-        var task_one = Task {
+        let task_one = Task {
             sleep(3)
             self.logger.log("Task one is doing some stuff..")
         }
         
-        var task_two = Task {
+        let task_two = Task {
             self.logger.log("Task two is doing some stuff..")
         }
         
-        var task_third = Task {
+        let task_third = Task {
             self.logger.log("Task three is doing some stuff..")
         }
         
-        var afterTask = Task {
+        let afterTask = Task {
             self.logger.log("I should get executed at the end of all the other requests")
         }
         
-        var barrier = Barrier(tasks: [task_one, task_two, task_third], afterTask:afterTask)
+        let barrier = Barrier(tasks: [task_one, task_two, task_third], afterTask:afterTask)
         barrier.startTasks()
     }
     
     func barrierComplexExample() {
-        var taskDownload = TaskComplex { (finished) -> () in
+        let taskDownload = TaskComplex { (finished) -> () in
             // Do something asynchronously and then at the end call the finished block to notify the barrier that it's finished
             finished()
         }
         
-        var taskCompress = TaskComplex { (finished) -> () in
+        let taskCompress = TaskComplex { (finished) -> () in
             // Do something else
             finished()
         }
         
-        var notifiyEveryoneAtTheEnd = TaskComplex { (finished) -> () in
+        let notifiyEveryoneAtTheEnd = TaskComplex { (finished) -> () in
             // Notify everyone
             finished()
         }
         
-        var barrierComplex = BarrierComplex(tasks: [taskDownload, taskCompress], afterTask: notifiyEveryoneAtTheEnd, verbose: true)
+        let barrierComplex = BarrierComplex(tasks: [taskDownload, taskCompress], afterTask: notifiyEveryoneAtTheEnd, verbose: true)
         
         barrierComplex.startTasks()
     }

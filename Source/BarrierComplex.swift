@@ -57,6 +57,6 @@ public class BarrierComplex {
     }
     
     public func allTasksFinished() -> Bool {
-        return self.taskStatus.values.array.filter{$0 == false}.count == 0
+        return Array(self.taskStatus.values).filter{$0 == false}.count == 0
     }
 }
