@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
 s.name             = "ROConcurrency"
-s.version          = "1.0.0"
+s.version          = "1.0.1"
 s.summary          = "Simple helper classes which will reduce the complexity for using concurrent methods in Swift."
 s.description      = <<-DESC
 Simple helper classes which will reduce the complexity for using concurrent methods in Swift. There is a Barrier class, BarrierComplex class and a Synchronized logger which will simplify the concurrent developing process.
