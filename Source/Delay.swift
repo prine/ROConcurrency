@@ -12,6 +12,7 @@ public typealias dispatch_cancelable_closure = (cancel:Bool) -> ()
 
 /**
  Provides helper methods for delaying closures
+ Inspired by Waam and Mattt on https://stackoverflow.com/questions/24034544/dispatch-after-gcd-in-swift
 */
 public class Delay {
     
