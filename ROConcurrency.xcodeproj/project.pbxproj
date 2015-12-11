@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB3E5B951C1B0CF4004716DA /* Delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3E5B941C1B0CF4004716DA /* Delay.swift */; };
 		CB929B2F1B57D18900962DEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB929B2E1B57D18900962DEA /* AppDelegate.swift */; };
 		CB929B311B57D18900962DEA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB929B301B57D18900962DEA /* ViewController.swift */; };
 		CB929B341B57D18900962DEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB929B321B57D18900962DEA /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CB3E5B941C1B0CF4004716DA /* Delay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Delay.swift; path = Source/Delay.swift; sourceTree = "<group>"; };
 		CB929B291B57D18900962DEA /* ROConcurrency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ROConcurrency.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB929B2D1B57D18900962DEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB929B2E1B57D18900962DEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				CB929B521B57D1D000962DEA /* SynchronizedLogger.swift */,
 				CB929B531B57D1D000962DEA /* Task.swift */,
 				CB929B541B57D1D000962DEA /* TaskComplex.swift */,
+				CB3E5B941C1B0CF4004716DA /* Delay.swift */,
 			);
 			name = Source;
 			path = ..;
@@ -257,6 +260,7 @@
 				CB929B561B57D1D000962DEA /* BarrierComplex.swift in Sources */,
 				CB929B551B57D1D000962DEA /* Barrier.swift in Sources */,
 				CB929B591B57D1D000962DEA /* Task.swift in Sources */,
+				CB3E5B951C1B0CF4004716DA /* Delay.swift in Sources */,
 				CB929B581B57D1D000962DEA /* SynchronizedLogger.swift in Sources */,
 				CB929B5A1B57D1D000962DEA /* TaskComplex.swift in Sources */,
 			);

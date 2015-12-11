@@ -18,6 +18,17 @@ class ViewController: UIViewController {
         // Run all examples
         barrierExample()
         barrierComplexExample()
+        delayExample()
+    }
+    
+    func delayExample() {
+        Delay.delayCall {
+            print("Delayed default 0.5")
+        }
+        
+        Delay.delayCall(2.0) {
+            print("2 seconds later....")
+        }
     }
     
     func barrierExample() {
