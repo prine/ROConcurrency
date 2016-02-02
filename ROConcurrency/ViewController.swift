@@ -56,7 +56,11 @@ class ViewController: UIViewController {
     func barrierComplexExample() {
         let taskDownload = TaskComplex { (finished) -> () in
             // Do something asynchronously and then at the end call the finished block to notify the barrier that it's finished
-            finished()
+            
+            Delay.delayCall(5.0) {
+                self.logger.log("Halloo Welt!")
+                finished()
+            }
         }
         
         let taskCompress = TaskComplex { (finished) -> () in
@@ -65,6 +69,8 @@ class ViewController: UIViewController {
         }
         
         let notifiyEveryoneAtTheEnd = TaskComplex { (finished) -> () in
+            self.logger.log("Jetzt sind wird aber wirklich mit allem fertig!")
+            
             // Notify everyone
             finished()
         }
