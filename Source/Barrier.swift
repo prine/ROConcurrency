@@ -37,7 +37,7 @@ open class Barrier {
         // Start executing all tasks asynchrously and monitor their finish status
         for task in self.tasks {
             
-            DispatchQueue.global(priority: DispatchQueue.GlobalQueuePriority.background).async(execute: {
+            DispatchQueue.global().async {
                 
                 if self.verbose { self.logger.log("Execute Task: \(task.taskUUID)") }
                 
@@ -56,8 +56,7 @@ open class Barrier {
                         })
                     }
                 })
-                
-            })
+            }
         }
     }
     
