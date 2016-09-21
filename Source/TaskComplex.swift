@@ -8,17 +8,17 @@
 
 import Foundation
 
-public class TaskComplex {
+open class TaskComplex {
     
     var taskUUID:String
-    var executionBlock:(finished:() -> ()) -> ()
+    var executionBlock:(_ finished:() -> ()) -> ()
     
-    public init(executionBlock:(finished:() -> ()) -> ()) {
-        self.taskUUID = NSUUID().UUIDString
+    public init(executionBlock:@escaping (_ finished:() -> ()) -> ()) {
+        self.taskUUID = UUID().uuidString
         self.executionBlock = executionBlock
     }
     
-    public func execute(finished:() -> ()) {
-        executionBlock(finished: finished)
+    open func execute(_ finished:() -> ()) {
+        executionBlock(finished)
     }
 }

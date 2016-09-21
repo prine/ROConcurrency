@@ -8,24 +8,39 @@
 
 import Foundation
 
-public typealias dispatch_cancelable_closure = (cancel:Bool) -> ()
+public typealias dispatch_cancelable_closure = (_ cancel:Bool) -> ()
 
 /**
  Provides helper methods for delaying closures
  Inspired by Waam and Mattt on https://stackoverflow.com/questions/24034544/dispatch-after-gcd-in-swift
 */
-public class Delay {
+open class Delay {
     
     /**
      Delay a call for a given time (The call is during that wait cancable)
+     
+     - parameters:
+     - time it is delayed (in seconds, default 0.5 seconds)
+     - closure block which will be executed
+     
+     */
+    open static func delayCall(_ delay:TimeInterval = 0.5, closure:@escaping ()->()) {
+        let when = DispatchTime.now() + delay
+        DispatchQueue.main.asyncAfter(deadline: when, execute: closure)
+    }
     
-     - parameters: 
-        - time it is delayed (in seconds, default 0.5 seconds)
-        - closure block which will be executed
+    /**
+     Delay a call for a given time (The call is during that wait cancable)
+     
+     - parameters:
+     - time it is delayed (in seconds, default 0.5 seconds)
+     - closure block which will be executed
      
      - returns: cancelable closure block
-    
-    */
+     
+     */
+    /*
+     OLD IMPLEMENTATION
     public static func delayCall(time:NSTimeInterval = 0.5, closure:()->()) ->  dispatch_cancelable_closure? {
         func dispatch_later(clsr:()->()) {
             dispatch_after(
@@ -59,6 +74,8 @@ public class Delay {
         
         return cancelableClosure;
     }
+    */
+
     
     /**
      Cancel the referenced closure block
@@ -67,9 +84,9 @@ public class Delay {
      - closure block which is currently in wait
      
      */
-    public static func cancelDelayCall(closure:dispatch_cancelable_closure?) {
+    open static func cancelDelayCall(_ closure:dispatch_cancelable_closure?) {
         if closure != nil {
-            closure!(cancel: true)
+            closure!(true)
         }
     }
 

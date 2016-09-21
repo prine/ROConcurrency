@@ -8,9 +8,9 @@
 
 import Foundation
 
-public class Lock {
+open class Lock {
     
-    public class func synchronize(lock: AnyObject, closure: () -> ()) {
+    open class func synchronize(_ lock: AnyObject, closure: () -> ()) {
         objc_sync_enter(lock)
         closure()
         objc_sync_exit(lock)

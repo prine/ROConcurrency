@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class BarrierComplex {
+open class BarrierComplex {
     
     var tasks:[TaskComplex]
     var afterTask:TaskComplex
@@ -31,7 +31,7 @@ public class BarrierComplex {
         }
     }
     
-    public func startTasks() -> () {
+    open func startTasks() -> () {
         
         // Start executing all tasks and monitor their finish status
         for task in self.tasks {
@@ -56,7 +56,7 @@ public class BarrierComplex {
         }
     }
     
-    public func allTasksFinished() -> Bool {
+    open func allTasksFinished() -> Bool {
         return Array(self.taskStatus.values).filter{$0 == false}.count == 0
     }
 }

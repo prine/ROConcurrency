@@ -10,15 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    private var logger = SynchronizedLogger.sharedInstance
+    fileprivate var logger = SynchronizedLogger.sharedInstance
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        delayExample()
 
         // Run all examples
         barrierExample()
         barrierComplexExample()
-        delayExample()
     }
     
     func delayExample() {
@@ -59,7 +60,7 @@ class ViewController: UIViewController {
             
             Delay.delayCall(5.0) {
                 self.logger.log("Halloo Welt!")
-                finished()
+                // finished()
             }
         }
         

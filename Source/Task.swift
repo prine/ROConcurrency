@@ -8,17 +8,17 @@
 
 import Foundation
 
-public class Task {
+open class Task {
     
     var taskUUID:String
     var executionBlock:() -> ()
     
-    public init(executionBlock:() -> ()) {
-        self.taskUUID = NSUUID().UUIDString
+    public init(executionBlock:@escaping () -> ()) {
+        self.taskUUID = UUID().uuidString
         self.executionBlock = executionBlock
     }
     
-    public func execute(finished:() -> ()) {
+    open func execute(_ finished:() -> ()) {
         executionBlock()
         finished()
     }

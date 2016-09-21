@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class Barrier {
+open class Barrier {
     
     var tasks:[Task]
     var afterTask:Task
@@ -32,12 +32,12 @@ public class Barrier {
         }
     }
     
-    public func startTasks() -> () {
+    open func startTasks() -> () {
         
         // Start executing all tasks asynchrously and monitor their finish status
         for task in self.tasks {
             
-            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), {
+            DispatchQueue.global(priority: DispatchQueue.GlobalQueuePriority.background).async(execute: {
                 
                 if self.verbose { self.logger.log("Execute Task: \(task.taskUUID)") }
                 
@@ -61,7 +61,7 @@ public class Barrier {
         }
     }
     
-    public func allTasksFinished() -> Bool {
+    open func allTasksFinished() -> Bool {
         return Array(self.taskStatus.values).filter{$0 == false}.count == 0
     }
 }
