@@ -11,14 +11,14 @@ import Foundation
 open class TaskComplex {
     
     var taskUUID:String
-    var executionBlock:(_ finished:() -> ()) -> ()
+    var executionBlock:(_ finished: @escaping () -> ()) -> ()
     
     public init(executionBlock:@escaping (_ finished: @escaping () -> ()) -> ()) {
         self.taskUUID = NSUUID().uuidString
         self.executionBlock = executionBlock
     }
     
-    open func execute(_ finished:() -> ()) {
+    open func execute(_ finished: @escaping () -> ()) {
         executionBlock(finished)
     }
 }
