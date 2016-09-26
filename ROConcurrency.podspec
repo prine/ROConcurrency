@@ -9,12 +9,12 @@
 
 Pod::Spec.new do |spec|
     spec.name         = 'ROConcurrency'
-    spec.version      = '2.1.0'
+    spec.version      = '2.1.1'
     spec.license      = { :type => 'MIT' }
     spec.homepage     = 'https://github.com/prine/ROConcurrency'
     spec.authors      = { 'Robin Oster' => 'prine.dev@gmail.com' }
     spec.summary      = 'Simple helper classes which will reduce the complexity for using concurrent methods in Swift.'
-    spec.source       = { :git => 'https://github.com/prine/ROConcurrency.git', :tag => "2.1.0" }
+    spec.source       = { :git => 'https://github.com/prine/ROConcurrency.git', :tag => "2.1.1" }
     spec.source_files = 'Source/**/*'
     spec.framework    = 'SystemConfiguration'
     spec.ios.deployment_target  = '8.4'

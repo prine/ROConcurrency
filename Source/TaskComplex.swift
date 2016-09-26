@@ -13,8 +13,8 @@ open class TaskComplex {
     var taskUUID:String
     var executionBlock:(_ finished:() -> ()) -> ()
     
-    public init(executionBlock:@escaping (_ finished:() -> ()) -> ()) {
-        self.taskUUID = UUID().uuidString
+    public init(executionBlock:@escaping (_ finished: @escaping () -> ()) -> ()) {
+        self.taskUUID = NSUUID().uuidString
         self.executionBlock = executionBlock
     }
     
